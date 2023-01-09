@@ -4,7 +4,6 @@ const restaurant = {
     categories: ['Italian','Pizzeria','Vegetarian','Organic'],
     starterMenu: ['Focaccia','Bruschetta','Garlic Bread','Caprese Salad'],
     mainMenu: ['Pizza','Pasta','Risotto'],
-
     openingHours: {
         thu: {
             open: 12,
@@ -19,7 +18,6 @@ const restaurant = {
             close: 24,
         },
     },
-
     order: function (starterIndex, mainIndex) {
         return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
     },
@@ -32,7 +30,6 @@ const restaurant = {
         );
     }
 };
-
 restaurant.orderDelivery({
     time: '22:30',
     address: 'Via del Sloe, 21',
